@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter 5 values of array and sort in ascending order ?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int i,j,temp;
+int arr[5];
+clrscr();
+printf("Enter 5 numbers :\n");
+for(i=0;i<5;i++)
+{
+printf("Enter number %d:");
+scanf("%d",&arr[i]);
+}
+for(i=0;i<4;i++)
+{
+for(j=i+1;j<5;j++)
+{
+if (arr[i]>arr[j])
+{
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+}
+}
+printf("\nNumbers in ascending order :\n");
+for(i=0;i<5;i++)
+{
+printf("%d",arr[i]);
+}
+printf("\n");
+return 0;
+}
+/*
+Output :
+Enter 5 numbers :
+Enter number 1:45
+Enter number 2:12
+Enter number 3:89
+Enter number 4:3
+Enter number 5:50
+
+Numbers in ascending order :
+3 12 45 50 89
+*/
+
+</pre>
+</body>
+</html>

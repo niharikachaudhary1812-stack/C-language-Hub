@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Find maximum values of array ?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int i,max;
+int arr[5];
+clrscr();
+printf("Enter 5 numbers :\n");
+for(i=0;i<5;i++)
+{
+printf("Enter number %d:");
+scanf("%d",&arr[i]);
+}
+max=arr[0];
+
+for(i=0;i<5;i++)
+{
+if (arr[i]>max)
+{
+max=arr[i];
+}
+}
+printf("\nThe maximum value in the array is : %d\n",max);
+return 0;
+}
+/*
+Output :
+Enter 5 numbers :
+Enter number 1:12
+Enter number 2:45
+Enter number 3:7
+Enter number 4:89
+Enter number 5:23
+
+The maximum value in the array is : 89
+*/
+
+</pre>
+</body>
+</html>

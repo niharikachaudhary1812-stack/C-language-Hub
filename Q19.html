@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter password from user maximum 20 digits/character press enter key if you want to exit ?
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+char pass[21];
+int i=0;
+char ch;
+clrscr();
+printf("Enter password (maximum 20 chars,press enter to exit):");
+while(i<20)
+{
+ch=getche();
+if(ch=='\n')
+break;
+pass[i]=ch;
+i++;
+}
+pass[i] = '\0';
+printf("\n Your password is : %s\n",pass);
+}
+/*
+Output :
+Enter password (maximum 20 chars,press enter to exit):niharika@123
+Your password is niharika@123
+*/
+</pre>
+</body>
+</html>

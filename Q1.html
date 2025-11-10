@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter the four number from user and print in into matrix .
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int a[2][2];
+clrscr();
+printf("Enter 4 numbers :");
+for(int i=0;i<2;i++)
+for(int j=0;j<2;j++)
+scanf("%d",&a[i][j]);
+printf("Matrix:\n");
+for(int i=0;i<2;i++)
+{
+for(int j=0;j<2;j++)
+printf("%d",a[i][j]);
+printf("\n");
+}
+getch();
+}
+/*
+Output :
+Enter 4 numbers :
+2
+2
+45
+67
+Matrix:
+2 2
+45 67
+*/
+</pre>
+</body>
+</html>

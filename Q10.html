@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter 5 values of array from user , enter a value from user and search this value in array,if value is found then print "found" or not then print "not then" ?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int i,search,found=0;
+int arr[5];
+clrscr();
+printf("Enter 5 elements of the array :\n");
+for(i=0;i<5;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("Enter the value to search:");
+scanf("%d",&search);
+for(i=0;i<5;i++)
+{
+if(arr[i]==search)
+{
+found=1;
+break;
+}
+}
+if (found==1)
+printf("Found\n");
+else
+printf("Not found\n");
+return 0;
+}
+/*
+Output :
+Enter 5 elements of the array :
+10 25 30 45 60
+Enter the value to search:30
+Found
+*/
+
+</pre>
+</body>
+</html>

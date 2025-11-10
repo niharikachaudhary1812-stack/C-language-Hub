@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter an array from the user and print the array in reverse order ?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int i,n;
+clrscr();
+printf("Enter the size of array :");
+scanf("%d",&n);
+int arr[n];
+printf("Enter %d elements :\n",n);
+for(inti=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("\nArray in reverse order are :\n");
+for(int i=n-1;i>=0;i--)
+{
+printf("%d",arr[i]);
+}
+printf("\n");
+return 0;
+}
+/*
+Output :
+Enter the size of array :5
+Enter 5 elements :
+90
+78
+25
+14
+10
+Array in reverse order are :
+10
+14
+25
+78
+90
+*/
+
+*/
+</pre>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Write a program to find out the Fibonacci series/1 to 100 (like 0 1 1 2 3 5 8 13......)
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int a=0,b=1,c;
+clrscr();
+printf("Fabonacci series from 1 to 100 :\n");
+printf("%d\n%d\n",a,b);
+c=a+b;
+while(c<=100)
+{
+c=a+b;
+printf("%d\n",c);
+a=b;
+b=c;
+}
+}
+/*
+Output :
+Fabonacci series from 1 to 100 :
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+*/
+
+</pre>
+</body>
+</html>

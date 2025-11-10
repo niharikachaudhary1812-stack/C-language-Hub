@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter 5 values of array from user and add all values?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int sum,i;
+int arr[5];
+clrscr();
+printf("Enter 5 elements of the array :\n");
+for(i=0;i<5;i++)
+{
+scanf("%d",&arr[i]);
+}
+for(i=0;i<5;i++)
+{
+sum+=arr[i];
+}
+printf("The sum of all array element is :%d\n",sum);
+
+return 0;
+}
+/*
+Output :
+Enter 5 elements of the array :
+10 20 5 15 25
+The sum of all array element is :75
+*/
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Questions</title>
+</head>
+<body>
+<pre>
+//Enter an array from the user and copy it into second array ?
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int n;
+clrscr();
+printf("Enter the number of elements :");
+scanf("%d",&n);
+int arr1[n],arr2[n];
+printf("Enter %d elements :\n",n);
+for(int i=0;i<n;i++)
+{
+scanf("%d",&arr1[i]);
+}
+for(int i=0;i<n;i++)
+{
+arr2[i]=arr1[i];
+}
+printf("\nElements of first array:\n");
+for(int i=0;i<n;i++)
+{
+printf("%d",arr1[i]);
+}
+printf("\nElements of second array:\n");
+for(int i=0;i<n;i++) {
+printf("%d",arr2[i]);
+}
+printf("\n");
+return 0;
+}
+/*
+Output :
+Enter the number of elements ::5
+Enter 5 elements :
+10 20 30 40 50
+Elements of first array:
+10 20 30 40 50
+Elements of second array:
+10 20 30 40 50
+*/
+</pre>
+</body>
+</html>
